@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p><input type="text" name="name"></p>
+    <p><input type="file" name="img" multiple accept="image/*"></p>
+    <p><textarea name="desc" id="" cols="10" rows="10"></textarea></p>
+    <p><input type="submit" name="上传图片"></p>
+</form>
+</body>
+</html>
